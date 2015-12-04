@@ -1,0 +1,4 @@
+ java.lang.IllegalArgumentException: Service Intent must be explicit: Intent { act=com.example.service.FIRST_SERVICE }
+
+必须已显示Intent才可以启动服务
+Intent intent = new Intent(this, Service.class);
