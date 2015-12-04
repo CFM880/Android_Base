@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ch01_6</string>
+    <string name="connect">定时访问服务器</string>
+    <string name="disconnect">停止访问服务器</string>
+    <string name="clear">清空</string>
+    <string name="updateTime">更新时间</string>
+</resources>
