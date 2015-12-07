@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ch02_03</string>
+    <string name="insert">添加生词</string>
+    <string name="search">查找</string>
+    <string name="detail">详情</string>
+
+</resources>
