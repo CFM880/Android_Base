@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">配置文件</string>
+    <string name="refresh_interval">定时刷机间隔</string>
+    <string name="control_interval">最小控制间隔</string>
+    <string name="upload_interval">定时上传间隔</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+</resources>
