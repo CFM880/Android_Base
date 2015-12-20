@@ -7,8 +7,8 @@ VideoView 播放视频基本步骤
 --------------------------
 - 1). 在界面布局中定义VideoView组件， 或者在程序中创建VideoView组件
 - 2). 调用VideoView对象的start(), stop(), pause()方法控制视频播放
-   -- setVideoPath(String path):加载path文件所代表的视频
-   -- setVideoURL(Uri uri): 加载Url所对应的视频
+   - setVideoPath(String path):加载path文件所代表的视频
+   - setVideoURL(Uri uri): 加载Url所对应的视频
 - 3). 调用Video对象的start(), stop(), pause()方法控制视频播放
 Notes
 -----
