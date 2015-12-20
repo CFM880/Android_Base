@@ -1,15 +1,12 @@
 package com.example.cfm.vedioview;
 
-import android.graphics.PixelFormat;
-import android.net.Uri;
+
 import android.widget.MediaController;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Toast;
 import android.widget.VideoView;
 
-import java.io.File;
-import java.net.URL;
+
 
 public class VideoViewTest extends AppCompatActivity {
     VideoView videoView;
