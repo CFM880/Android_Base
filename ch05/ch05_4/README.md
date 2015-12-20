@@ -17,7 +17,7 @@ SurfaceView组件。
 - 4). 调用MediaPlayer对象的start(), stop()和pause()方法控制视频播放
 
 [1]: http://developer.android.com/reference/android/view/SurfaceHolder.html
-[2]: http://developer.android.com/reference/android/view/SurfaceHolder.Callback.html
+[2]: 
 [3]: http://developer.android.com/reference/android/media/MediaPlayer.html#setDisplay(android.view.SurfaceHolder)
 
 测试
