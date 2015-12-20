@@ -21,4 +21,5 @@ SurfaceView组件。
 [3]: http://developer.android.com/reference/android/media/MediaPlayer.html#setDisplay(android.view.SurfaceHolder)
 
 测试
+----
 <img src="screenshots/surfaceView.jpg" height="400" alt="Screenshot"/>
