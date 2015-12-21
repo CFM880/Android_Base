@@ -2,6 +2,7 @@ package com.example.cfm.surfaceviewplay;
 
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -80,7 +81,7 @@ public class SurfaceViewPlayVideo extends AppCompatActivity implements View.OnCl
     private void play() throws IOException{
         mPlayer.reset();
         mPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-        mPlayer.setDataSource("/storage/sdcard0/netease/cloudmusic/MV/xiao.mp4");
+        mPlayer.setDataSource(this, Uri.parse("http://www.cfm880.com/wp-content/uploads/2015/12/videoviewdemo.mp4?_=1"));
         mPlayer.setDisplay(surfaceView.getHolder());
 
         mPlayer.prepare();
