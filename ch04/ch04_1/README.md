@@ -95,6 +95,8 @@ The method **getEventType** returns the type of event that happens. e.g: Documen
 The method **getName** returns the name of the tag and since we are only interested in temperature , 
 so we just check in conditional statement that if we got a temperature tag , we call the method **getAttributeValue** to return us the value of temperature tag.
 Apart from the these methods, there are other methods provided by this class for better parsing XML files. These methods are listed below −
+
+
 **Sr.No** | **Component & description** 
 ----------|------------------------------
 1         | **getAttributeCount()** This method just Returns the number of attributes of the current start tag
