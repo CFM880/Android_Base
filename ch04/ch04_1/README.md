@@ -45,5 +45,6 @@ An xml file consist of many components. Here is the table defining the component
 
 **Sr.No** | **Component & description** 
 ----------|------------------------------
-1         | **Prolog** <br An XML file starts with a prolog. The first line that contains the information about a file is prolog/>
+1         | **Prolog**  An XML file starts with a prolog. The first line that contains the information about a file is prolog
+
 
