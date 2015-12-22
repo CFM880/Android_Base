@@ -2,7 +2,7 @@ Android -XML 解析
 =================
 XML stands for Extensible Mark-up Language.XML is a very popular format and commonly used for sharing data on the internet. This chapter explains how to parse the XML file and extract necessary information from it.
 
-Android provides three types of XML parsers which are **DOM**,**SAX** and **XMLPullParser**. Among all of them android recommend **XMLPullParser** because it is efficient and easy to use. So we are going to use XMLPullParser for parsing XML
+Android provides three types of XML parsers which are **DOM**, **SAX** and **XMLPullParser**. Among all of them android recommend **XMLPullParser** because it is efficient and easy to use. So we are going to use XMLPullParser for parsing XML
 
 The first step is to identify the fields in the XML data in which you are interested in. For example. In the XML given below we interested in getting temperature only.
 
@@ -45,6 +45,10 @@ An xml file consist of many components. Here is the table defining the component
 
 **Sr.No** | **Component & description** 
 ----------|------------------------------
-1         | **Prolog**  An XML file starts with a prolog. The first line that contains the information about a file is prolog
+1         | **Prolog** An XML file starts with a prolog. The first line that contains the information about a file is prolog
+2         | **Events** An XML file has many events. Event could be like this. Document starts , Document ends, Tag start , Tag end and Text e.t.c
+3         | **Text** Apart from tags and events, and xml file also contains simple text. Such as GB is a text in the country tag.
+4         | **Text** Attributes are the additional properties of a tag such as value e.t.c
+ 
 
 
