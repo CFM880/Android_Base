@@ -103,12 +103,14 @@ Apart from the these methods, there are other methods provided by this class for
 2         | **getAttributeName(int index)** This method returns the name of the attribute specified by the index value
 3         | **getColumnNumber()** This method returns the Returns the current column number, starting from 0.
 4         | **getDepth()** This method returns Returns the current depth of the element.
-5 | **getLineNumber()** Returns the current line number, starting from 1.
-6 | **getNamespace()** This method returns the name space URI of the current element.
-7 | **getPrefix()** This method returns the prefix of the current element
-8 | **getName()** This method returns the name of the tag
-9 | **getText()** This method retruns the text for that particluar element
-10| **isWhitespace()** This method checks whether the current TEXT event contains only whitespace characters.
+5         | **getLineNumber()** Returns the current line number, starting from 1.
+6         | **getNamespace()** This method returns the name space URI of the current element.
+7         | **getPrefix()** This method returns the prefix of the current element
+8         | **getName()** This method returns the name of the tag
+9         | **getText()** This method retruns the text for that particluar element
+10        | **isWhitespace()** This method checks whether the current TEXT event contains only whitespace characters.
+
+http://www.cfm880.com/wp-content/uploads/2015/12/tvs_epg.xml
 
 
  
