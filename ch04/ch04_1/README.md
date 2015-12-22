@@ -110,6 +110,11 @@ Apart from the these methods, there are other methods provided by this class for
 9         | **getText()** This method retruns the text for that particluar element
 10        | **isWhitespace()** This method checks whether the current TEXT event contains only whitespace characters.
 
+
+# Test
+
+<img src="screenshots/xml.jpg" height="400" alt="Screenshot"/>
+
 http://www.cfm880.com/wp-content/uploads/2015/12/tvs_epg.xml
 
 
