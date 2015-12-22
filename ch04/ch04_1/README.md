@@ -49,6 +49,46 @@ An xml file consist of many components. Here is the table defining the component
 2         | **Events** An XML file has many events. Event could be like this. Document starts , Document ends, Tag start , Tag end and Text e.t.c
 3         | **Text** Apart from tags and events, and xml file also contains simple text. Such as GB is a text in the country tag.
 4         | **Text** Attributes are the additional properties of a tag such as value e.t.c
+
+
+# XML - Parsing
+
+In the next step, we will create XMLPullParser object , but in order to create that we will first create XmlPullParserFactory object and then call its newPullParser() method to create XMLPullParser. Its syntax is given below −
+
+```
+private XmlPullParserFactory xmlFactoryObject = XmlPullParserFactory.newInstance();
+private XmlPullParser myparser = xmlFactoryObject.newPullParser();
+```
+
+The next step involves specifying the file for XmlPullParser that contains XML. It could be a file or could be a Stream. In our case it is a stream.Its syntax is given below −
+
+```
+myparser.setInput(stream, null);
+```
+
+The last step is to parse the XML. An XML file consist of events, Name, Text, AttributesValue e.t.c. So XMLPullParser has a separate function for parsing each of the component of XML file. Its syntax is given below −
+
+```
+int event = myParser.getEventType();
+while (event != XmlPullParser.END_DOCUMENT) 
+{
+   String name=myParser.getName();
+   switch (event){
+      case XmlPullParser.START_TAG:
+      break;
+      
+      case XmlPullParser.END_TAG:
+      if(name.equals("temperature")){
+         temperature = myParser.getAttributeValue(null,"value");
+      }
+      break;
+   }		 
+   event = myParser.next(); 					
+}
+```
+
+
+
  
 
 
