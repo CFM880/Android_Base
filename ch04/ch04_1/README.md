@@ -91,11 +91,22 @@ while (event != XmlPullParser.END_DOCUMENT)
 }
 ```
 
-The method getEventType returns the type of event that happens. e.g: Document start , tag start e.t.c.
-The method getName returns the name of the tag and since we are only interested in temperature , 
-so we just check in conditional statement that if we got a temperature tag , we call the method getAttributeValue to return us the value of temperature tag.
+The method **getEventType** returns the type of event that happens. e.g: Document start , tag start e.t.c.
+The method **getName** returns the name of the tag and since we are only interested in temperature , 
+so we just check in conditional statement that if we got a temperature tag , we call the method **getAttributeValue** to return us the value of temperature tag.
 Apart from the these methods, there are other methods provided by this class for better parsing XML files. These methods are listed below −
-
+**Sr.No** | **Component & description** 
+----------|------------------------------
+1         | **getAttributeCount()** This method just Returns the number of attributes of the current start tag
+2         | **getAttributeName(int index)** This method returns the name of the attribute specified by the index value
+3         | **getColumnNumber()** This method returns the Returns the current column number, starting from 0.
+4         | **getDepth()** This method returns Returns the current depth of the element.
+5 | **getLineNumber()** Returns the current line number, starting from 1.
+6 | **getNamespace()** This method returns the name space URI of the current element.
+7 | **getPrefix()** This method returns the prefix of the current element
+8 | **getName()** This method returns the name of the tag
+9 | **getText()** This method retruns the text for that particluar element
+10| **isWhitespace()** This method checks whether the current TEXT event contains only whitespace characters.
 
 
  
