@@ -2,7 +2,8 @@ Android -XML 解析
 =================
 XML stands for Extensible Mark-up Language.XML is a very popular format and commonly used for sharing data on the internet. This chapter explains how to parse the XML file and extract necessary information from it.
 
-Android provides three types of XML parsers which are **DOM**, **SAX** and **XMLPullParser**. Among all of them android recommend **XMLPullParser** because it is efficient and easy to use. So we are going to use XMLPullParser for parsing XML
+Android provides three types of XML parsers which are **DOM**, **SAX** and **XMLPullParser**. Among all of them android recommend **XMLPullParser** because it is efficient
+ and easy to use. So we are going to use XMLPullParser for parsing XML
 
 The first step is to identify the fields in the XML data in which you are interested in. For example. In the XML given below we interested in getting temperature only.
 
@@ -49,24 +50,28 @@ An xml file consist of many components. Here is the table defining the component
 2         | **Events** An XML file has many events. Event could be like this. Document starts , Document ends, Tag start , Tag end and Text e.t.c
 3         | **Text** Apart from tags and events, and xml file also contains simple text. Such as GB is a text in the country tag.
 4         | **Text** Attributes are the additional properties of a tag such as value e.t.c
+----------|--------------------------------
 
 
 # XML - Parsing
 
-In the next step, we will create XMLPullParser object , but in order to create that we will first create XmlPullParserFactory object and then call its newPullParser() method to create XMLPullParser. Its syntax is given below −
+In the next step, we will create XMLPullParser object , but in order to create that we will first create 
+XmlPullParserFactory object and then call its newPullParser() method to create XMLPullParser. Its syntax is given below −
 
 ```
 private XmlPullParserFactory xmlFactoryObject = XmlPullParserFactory.newInstance();
-private XmlPullParser myparser = xmlFactoryObject.newPullParser();
+private XmlPullParser myParser = xmlFactoryObject.newPullParser();
 ```
 
-The next step involves specifying the file for XmlPullParser that contains XML. It could be a file or could be a Stream. In our case it is a stream.Its syntax is given below −
+The next step involves specifying the file for XmlPullParser that contains XML. It could be a file or could be a Stream. 
+In our case it is a stream.Its syntax is given below −
 
 ```
 myparser.setInput(stream, null);
 ```
 
-The last step is to parse the XML. An XML file consist of events, Name, Text, AttributesValue e.t.c. So XMLPullParser has a separate function for parsing each of the component of XML file. Its syntax is given below −
+The last step is to parse the XML. An XML file consist of events, Name, Text, AttributesValue e.t.c. So XMLPullParser 
+has a separate function for parsing each of the component of XML file. Its syntax is given below −
 
 ```
 int event = myParser.getEventType();
@@ -86,6 +91,11 @@ while (event != XmlPullParser.END_DOCUMENT)
    event = myParser.next(); 					
 }
 ```
+
+The method getEventType returns the type of event that happens. e.g: Document start , tag start e.t.c.
+The method getName returns the name of the tag and since we are only interested in temperature , 
+so we just check in conditional statement that if we got a temperature tag , we call the method getAttributeValue to return us the value of temperature tag.
+Apart from the these methods, there are other methods provided by this class for better parsing XML files. These methods are listed below −
 
 
 
