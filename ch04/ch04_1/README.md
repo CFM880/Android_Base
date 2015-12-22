@@ -50,7 +50,6 @@ An xml file consist of many components. Here is the table defining the component
 2         | **Events** An XML file has many events. Event could be like this. Document starts , Document ends, Tag start , Tag end and Text e.t.c
 3         | **Text** Apart from tags and events, and xml file also contains simple text. Such as GB is a text in the country tag.
 4         | **Text** Attributes are the additional properties of a tag such as value e.t.c
-----------|--------------------------------
 
 
 # XML - Parsing
